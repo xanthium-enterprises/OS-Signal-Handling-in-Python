@@ -1,5 +1,9 @@
+# OS Signal Handling in Python 3.x.x
+
 # using signals to get out of an infinite loop
 # Signal used is Signals.SIGINT:  CTRL + C
+# www.xanthium.in
+
 
 import signal # Import signal module using the import keyword
 import time   # available signals on your system
