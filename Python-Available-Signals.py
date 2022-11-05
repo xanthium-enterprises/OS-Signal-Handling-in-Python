@@ -4,7 +4,7 @@
 
 import signal    # Import signal module using the import keyword
 import platform  # for identifying the OS 
-
+import pprint    # for pretty print 
 
 # available signals on our System
 valid_signals = signal.valid_signals()     # requires python 3.9.0
@@ -13,7 +13,8 @@ valid_signals = signal.valid_signals()     # requires python 3.9.0
 #print('Available Signals           ->',valid_signals)
 print('\n\nOperating System            ->',platform.platform())
 print('Number of Available Signals ->', len(valid_signals) , '\n')
-for i in valid_signals:
-    print(i)
+
+pprint.pprint(valid_signals)#using pretty print to display set datastructure
+
 
 
